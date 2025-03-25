@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kagbeni Images Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Kagbeni Image Gallery</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="origin.html">Origin</a></li>
+                <li><a href="people.html">People & Culture</a></li>
+                <li><a href="tourism.html">Tourism</a></li>
+                <li><a href="geography.html">Geography</a></li>
+                <li><a href="festivals.html">Festivals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="content" class="fade-in">
+        <h2>Explore the Beauty of Kagbeni</h2>
+        <div class="gallery">
+            <img src="images/kagbeni1.jpg" alt="Kagbeni Village View" onclick="openModal(this.src)">
+            <img src="images/kagbeni2.jpg" alt="Kagbeni Landscape" onclick="openModal(this.src)">
+            <img src="images/kagbeni3.jpg" alt="Kagbeni Culture" onclick="openModal(this.src)">
+            <img src="images/kagbeni4.jpg" alt="Kagbeni Festival" onclick="openModal(this.src)">
+            <img src="images/kagbeni5.jpg" alt="Kagbeni People" onclick="openModal(this.src)">
+            <img src="images/kagbeni6.jpg" alt="Kagbeni Nature" onclick="openModal(this.src)">
+            <img src="images/kagbeni7.jpg" alt="Kagbeni Village View" onclick="openModal(this.src)">
+            <img src="images/kagbeni8.jpg" alt="Kagbeni Landscape" onclick="openModal(this.src)">
+            <img src="images/kagbeni9.jpg" alt="Kagbeni Culture" onclick="openModal(this.src)">
+            <img src="images/kagbeni10.jpg" alt="Kagbeni Festival" onclick="openModal(this.src)">
+            <img src="images/kagbeni11.jpg" alt="Kagbeni People" onclick="openModal(this.src)">
+            <img src="images/kagbeni12.jpg" alt="Kagbeni Nature" onclick="openModal(this.src)">
+            <img src="images/kagbeni13.jpg" alt="Kagbeni Village View" onclick="openModal(this.src)">
+            <img src="images/kagbeni14.jpg" alt="Kagbeni Landscape" onclick="openModal(this.src)">
+            <img src="images/kagbeni15.jpg" alt="Kagbeni Culture" onclick="openModal(this.src)">
+            <img src="images/kagbeni16.jpg" alt="Kagbeni Festival" onclick="openModal(this.src)">
+            <!-- Add more images as needed -->
+        </div>
+
+        <!-- Modal for full-size image -->
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ShanKyTech. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
