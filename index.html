@@ -1,94 +1,490 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kagbeni Village - Home</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script defer src="script.js"></script>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kagbeni, Mustang — The Windswept Gate of the Forbidden Kingdom</title>
+  <meta name="description" content="Kagbeni (2,804 m) is the medieval gateway village to Upper Mustang, Nepal — where the Kali Gandaki and Kag rivers meet. History, festivals, permits (US$50/day since 2026), treks, seasons and travel guide.">
+  <meta property="og:title" content="Kagbeni, Mustang — The Windswept Gate">
+  <meta property="og:description" content="The last village before the Forbidden Kingdom. Plan your journey to Kagbeni and Upper Mustang.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/kagbeni-pano-big.jpg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <body>
-    <header>
-      <h1>Kagbeni Village <br> Mustang District, Nepal</h1>      
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="origin.html">Origin</a></li>
-          <li><a href="people.html">People & Culture</a></li>
-          <li><a href="tourism.html">Tourism</a></li>
-          <li><a href="geography.html">Geography</a></li>
-          <li><a href="festivals.html">Festivals</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+<body>
+  <!-- Preloader -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__word">
+        <span style="animation-delay:.05s">K</span><span style="animation-delay:.1s">A</span><span style="animation-delay:.15s">G</span><span style="animation-delay:.2s">B</span><span style="animation-delay:.25s">E</span><span style="animation-delay:.3s">N</span><span style="animation-delay:.35s">I</span>
+      </div>
+      <div class="loader__alt" data-alt>ALT 0000 M</div>
+    </div>
+  </div>
 
+  <div class="grain" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"><b></b></div>
+
+  <!-- Header -->
+  <header class="site-head">
+    <a class="logo" href="#top" aria-label="Kagbeni — back to top">
+      <svg viewBox="0 0 40 40" aria-hidden="true">
+        <path d="M2 32 L14 12 L20 21 L26 14 L38 32 Z" fill="none" stroke="#c98a4b" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M4 37 h32" stroke="#eae3d4" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+        <circle cx="30" cy="8" r="3.4" fill="#e8ab66"/>
+      </svg>
+      KAGBENI
+    </a>
+    <button class="burger" aria-label="Menu" aria-expanded="false"><i></i></button>
+    <nav class="site-nav" aria-label="Sections">
+      <a href="#village">Village</a>
+      <a href="#story">Crossroads</a>
+      <a href="#journey">Journey</a>
+      <a href="#sacred">Sacred</a>
+      <a href="#seasons">Seasons</a>
+      <a href="#gallery">Gallery</a>
+      <a class="nav-cta" href="#guide">Plan your visit</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- ================= HERO ================= -->
     <section class="hero">
-      <h2 class="welcome">Welcome to Kagbeni Village</h2>
-      <p>
-        Explore the beauty, culture, and history of this ancient Himalayan
-        village.
-      </p>
-      <button onclick="location.href='learn-more.html'">Photo Galary</button>
-
+      <div class="hero__bg" style="background-image:url('images/kagbeni-pano-big.jpg')" role="img"
+           aria-label="Kagbeni village with its red monastery and green barley fields, at the mouth of the vast Kali Gandaki valley leading north to Upper Mustang"></div>
+      <div class="hero__body">
+        <p class="hero__kicker">Mustang · Nepal · The last village before the Forbidden Kingdom</p>
+        <h1 class="hero__title" aria-label="Kagbeni">
+          <span style="--i:0">K</span><span style="--i:1">A</span><span style="--i:2">G</span><span style="--i:3">B</span><span style="--i:4">E</span><span style="--i:5">N</span><span style="--i:6">I</span>
+        </h1>
+        <div class="hero__row">
+          <p class="hero__lede">A <b>medieval village of mud-brick alleys and prayer wheels</b>, standing guard where the Kali Gandaki river opens the only road to the walled kingdom of Lo — for six hundred years, and counting.</p>
+          <div class="hero__facts">
+            <div><b>2,804 m</b>altitude</div>
+            <div><b>28.83° N</b>83.78° E</div>
+            <div><b>1429 AD</b>red monastery</div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">scroll</div>
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>The windiest village in Nepal <em>◆</em> Gateway to Upper Mustang <em>◆</em> Confluence of the Kali Gandaki &amp; Kag rivers <em>◆</em> Home of the shaligram <em>◆</em> Kag Chode monastery est. 1429 <em>◆</em></span>
+        </div>
+      </div>
     </section>
 
-    <section id="content" class="fade-in">
-      <h2>About Kagbeni</h2>
-      <p>
-        Kagbeni is a medieval village in the Mustang district of Nepal, known
-        for its rich culture, history, and stunning landscapes. Nestled at the
-        confluence of the Kali Gandaki River and the Muktinath Valley, it offers
-        a gateway to Upper Mustang and a glimpse into a vibrant Tibetan cultural
-        heritage.
-      </p>
-      <img src="images/kagbeni-bg.jpg" alt="Kagbeni Village View" />
-
-      <h3>Why Visit Kagbeni?</h3>
-      <div class="card">
-        <h4>Rich Cultural Heritage</h4>
-        <p>
-          Experience the unique blend of Tibetan and Nepali cultures through
-          local festivals, traditional architecture, and daily village life.
+    <!-- ================= MANIFESTO ================= -->
+    <section class="section" id="village">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="index">01 — The Village</span>
+        </div>
+        <p class="manifesto">
+          <span class="w">Where</span> <span class="w">two</span> <span class="w">rivers</span>
+          <img class="chip" src="images/kali-gandaki-autumn.jpg" alt="" loading="lazy">
+          <span class="w">meet</span> <span class="w">and</span> <span class="w">the</span>
+          <span class="w accent">wind</span> <span class="w accent">is</span> <span class="w accent">born,</span>
+          <span class="w">a</span> <span class="w">medieval</span> <span class="w">village</span>
+          <img class="chip" src="images/kagbeni-village-1.jpg" alt="" loading="lazy">
+          <span class="w">still</span> <span class="w">guards</span> <span class="w">the</span>
+          <span class="w">road</span> <span class="w">to</span> <span class="w">the</span>
+          <span class="w accent">Forbidden</span> <span class="w accent">Kingdom.</span>
         </p>
+        <div class="figures">
+          <div class="rv" style="--d:0s"><b>2,804<i> M</i></b><span>above the sea</span></div>
+          <div class="rv" style="--d:.08s"><b>1429<i> AD</i></b><span>Kag Chode founded</span></div>
+          <div class="rv" style="--d:.16s"><b>34<i> RUINS</i></b><span>Phudzling cave houses</span></div>
+          <div class="rv" style="--d:.24s"><b>20<i> MIN</i></b><span>flight Pokhara–Jomsom</span></div>
+        </div>
       </div>
-
-      <div class="card">
-        <h4>Breathtaking Landscapes</h4>
-        <p>
-          From the Kali Gandaki River to the surrounding Himalayan peaks,
-          Kagbeni boasts some of the most stunning sceneries in Nepal.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Spiritual Significance</h4>
-        <p>
-          Home to ancient monasteries and religious sites, the village offers a
-          serene environment for reflection and spiritual growth.
-        </p>
-      </div>
-
-      <h3>Adventure Awaits</h3>
-      <p>
-        Kagbeni serves as a base for trekkers looking to explore the remote
-        landscapes and ancient Tibetan Buddhist monasteries of the region. The
-        trails that lead from Kagbeni offer stunning views and unique geological
-        formations.
-      </p>
-
-      <h3>Visitor Information</h3>
-      <p>
-        The best times to visit Kagbeni are during the spring (March to May) and
-        autumn (September to November) when the weather is mild and stable. The
-        village's serene ambiance and stunning natural beauty make it an ideal
-        destination for those seeking tranquility and adventure alike.
-      </p>
     </section>
 
-    <footer>
-      <p>&copy; 2025 ShanKyTech. All rights reserved.</p>
-    </footer>
-  </body>
+    <!-- ================= STORY / CROSSROADS ================= -->
+    <section class="section" id="story" style="padding-top:0">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="index">02 — The Crossroads</span>
+          <h2>Four ways to read <em>one village</em></h2>
+        </div>
+      </div>
+      <div class="wrap story">
+        <div class="story__media">
+          <div class="story__frame">
+            <img src="images/kagbeni-women.jpg" data-caption="Wool &amp; wind — village life, Kagbeni" alt="Women of Kagbeni sitting by a stone wall spinning wool together">
+            <img src="images/kali-gandaki-1.jpg" data-caption="The Kali Gandaki, seen from the cliffs" alt="The braided Kali Gandaki river running through a deep desert canyon" loading="lazy">
+            <img src="images/prayer-flags.jpg" data-caption="Afternoon wind on the river flats" alt="A tattered prayer flag whipping in strong wind above the wide gravel riverbed" loading="lazy">
+            <img src="images/kagbeni-wide-1.jpg" data-caption="The hillside sign above the village" alt="The word KAGBENI written in giant white letters on a stony hillside, with Tibetan script above" loading="lazy">
+          </div>
+          <span class="story__caption" aria-hidden="true"></span>
+        </div>
+        <div class="story__text">
+          <div class="step">
+            <h3><i>I · The Crossroads</i>Salt went south, grain went north</h3>
+            <p>For centuries Kagbeni sat at the knot of the Himalayan salt trade — the crossing point between <b>Manang, Dolpo, Upper Mustang and the mid-hills</b>. Caravans of salt, wool and grain rested inside its fortified alleys before braving the passes.</p>
+            <p>The village grew inward, like a fortress: houses joined into walls, lanes narrowed to tunnels, and the great chörten gate still funnels every traveler through its painted arch.</p>
+          </div>
+          <div class="step">
+            <h3><i>II · The Name</i>The name is a map</h3>
+            <p><b>Ka</b> for Kali, <b>Ga</b> for Gandaki, <b>Beni</b> — the meeting of rivers. Kagbeni is named for the exact point where the <b>Kag Khola pours into the Kali Gandaki</b>, one of the deepest river corridors on Earth, cut between the 8,000-metre giants of Annapurna and Dhaulagiri.</p>
+          </div>
+          <div class="step">
+            <h3><i>III · The Wind</i>The wind arrives at noon</h3>
+            <p>Every day, like clockwork, warm air rises from the lowlands and is squeezed through the gorge — making this valley famously <b>the windiest place in Nepal</b>. Mornings are still and golden; afternoons roar.</p>
+            <p>Locals plan by it. Trekkers learn to. Walk early, then watch the dust ghosts race up the riverbed from a teahouse window.</p>
+          </div>
+          <div class="step">
+            <h3><i>IV · The Gate</i>Written on the hillside</h3>
+            <p>Above the rooftops, the village spells its own name in whitewashed stones. Beyond that hillside the trail crosses a line on the map: the <b>restricted kingdom of Upper Mustang</b>, closed to outsiders until 1992 and still entered only through this checkpoint.</p>
+            <p>Kagbeni is not on the way to the Forbidden Kingdom. Kagbeni is the door.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= JOURNEY ================= -->
+    <section class="journey" id="journey">
+      <div class="journey__pin">
+        <div class="wrap sec-head" style="margin-bottom:1.6rem">
+          <span class="index">03 — The Journey North</span>
+          <h2>Jomsom to the <em>walled city</em></h2>
+        </div>
+        <p class="journey__hint">Scroll or swipe — the road moves sideways</p>
+        <div class="journey__rail">
+          <article class="jcard">
+            <div class="jcard__media">
+              <span class="jcard__no">STOP 01</span>
+              <img src="images/jomsom.jpg" alt="A small plane landing at Jomsom airstrip beneath snow-capped peaks" loading="lazy">
+            </div>
+            <div class="jcard__body">
+              <div class="jcard__meta"><span>2,720 m</span><span>Fly 20 min from Pokhara</span></div>
+              <h3>Jomsom</h3>
+              <p>District headquarters and airstrip in the shadow of Nilgiri. Morning flights only — the noon wind closes the valley. Jeeps and the riverside trail continue north.</p>
+            </div>
+          </article>
+          <article class="jcard">
+            <div class="jcard__media">
+              <span class="jcard__no">STOP 02</span>
+              <img src="images/kagbeni-village-1.jpg" alt="Kagbeni's mud-brick houses with prayer flags, backed by the snowy wall of Nilgiri" loading="lazy">
+            </div>
+            <div class="jcard__body">
+              <div class="jcard__meta"><span>2,804 m</span><span>10 km · ~3 h walk</span></div>
+              <h3>Kagbeni</h3>
+              <p>The gate itself. Medieval tunnels, the 600-year-old Red Monastery, apple orchards, and the last teahouses before the restricted line. Sleep here; walk the alleys at dusk.</p>
+            </div>
+          </article>
+          <article class="jcard">
+            <div class="jcard__media">
+              <span class="jcard__no">DETOUR</span>
+              <img src="images/muktinath.jpg" alt="Muktinath temple with its ritual water pools in a stone courtyard" loading="lazy">
+            </div>
+            <div class="jcard__body">
+              <div class="jcard__meta"><span>3,710 m</span><span>Half-day east</span></div>
+              <h3>Muktinath</h3>
+              <p>One of the holiest sites in the Himalaya for Hindus and Buddhists alike — 108 water spouts, an eternal flame, and pilgrims from across the subcontinent. No special permit needed.</p>
+            </div>
+          </article>
+          <article class="jcard">
+            <div class="jcard__media">
+              <span class="jcard__no">STOP 03</span>
+              <img src="images/chele.jpg" alt="Eroded organ-pipe cliffs above the Kali Gandaki in Upper Mustang" loading="lazy">
+            </div>
+            <div class="jcard__body">
+              <div class="jcard__meta"><span>3,050 m</span><span>Permit country</span></div>
+              <h3>Beyond the checkpoint</h3>
+              <p>North of Kagbeni's ACAP post the canyon turns to sculpted stone — Chhusang, Chele, and cliff caves older than memory. From here on, the Upper Mustang permit rides in your pocket.</p>
+            </div>
+          </article>
+          <article class="jcard">
+            <div class="jcard__media">
+              <span class="jcard__no">STOP 04</span>
+              <img src="images/lo-manthang.jpg" alt="The red monastery walls and earthen chortens of Lo Manthang at dusk" loading="lazy">
+            </div>
+            <div class="jcard__body">
+              <div class="jcard__meta"><span>3,840 m</span><span>3–4 days from the gate</span></div>
+              <h3>Lo Manthang</h3>
+              <p>The walled capital of the old Kingdom of Lo — palaces, crimson gompas, and the masked dances of the Tiji festival each spring. The road that starts in Kagbeni ends here.</p>
+            </div>
+          </article>
+          <article class="jcard" style="display:flex;align-items:center;justify-content:center;background:transparent;border-style:dashed">
+            <div class="jcard__body" style="text-align:center">
+              <h3 style="margin-bottom:1rem">Ready?</h3>
+              <a class="btn-solid" href="#guide">Permits &amp; logistics
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SACRED ================= -->
+    <section class="section" id="sacred">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="index">04 — Sacred Kagbeni</span>
+          <h2>Stones, spirits &amp; <em>six centuries</em> of prayer</h2>
+          <p>Kagbeni is holy twice over — a Buddhist monastery town on the Tibetan frontier, and one of Hinduism's great sites for honouring the ancestors.</p>
+        </div>
+        <div class="sacred-grid">
+          <a class="relic rv" href="images/kagbeni-village-2.jpg" data-shot data-label="Kag Chode, est. 1429">
+            <img src="images/kagbeni-village-2.jpg" alt="The maroon assembly hall of Kag Chode monastery with golden roof finials, below a barren mountainside" loading="lazy">
+            <div class="relic__body">
+              <span class="relic__no">04.1 — The Red Monastery</span>
+              <h3>Kag Chode Thupten Samphel Ling</h3>
+              <p>Founded in <b>1429</b> by the Sakya scholar Tenpai Gyaltsen, its leaning earthen walls have schooled monks for six hundred years. Morning prayers are open to respectful visitors.</p>
+            </div>
+          </a>
+          <a class="relic rv" style="--d:.08s" href="images/shaligram.jpg" data-shot data-label="Shaligram — Vishnu in stone">
+            <img src="images/shaligram.jpg" alt="Black spiral shaligram ammonite fossils collected from the Kali Gandaki" loading="lazy">
+            <div class="relic__body">
+              <span class="relic__no">04.2 — The Holy Fossils</span>
+              <h3>Shaligram</h3>
+              <p>The Kali Gandaki's black ammonites — sea creatures older than the Himalaya itself — are revered as embodiments of <b>Lord Vishnu</b> and found nowhere else on Earth.</p>
+            </div>
+          </a>
+          <a class="relic rv" href="images/kali-gandaki-autumn.jpg" data-shot data-label="Rites at the confluence">
+            <img src="images/kali-gandaki-autumn.jpg" alt="The Kali Gandaki river at Kagbeni in autumn colours" loading="lazy">
+            <div class="relic__body">
+              <span class="relic__no">04.3 — The Ancestors</span>
+              <h3>Pitri Mokshasthala</h3>
+              <p>At the river confluence, Hindu families perform <b>shraddha</b> — rites that free the souls of ancestors. Pilgrims bound for Muktinath stop here first, by the Shaligram Mata temple.</p>
+            </div>
+          </a>
+          <a class="relic rv" style="--d:.08s" href="images/kagbeni-gompa.jpg" data-shot data-label="Phudzling — the older village">
+            <img src="images/kagbeni-gompa.jpg" alt="White chortens and prayer flags below layered rock cliffs near Kagbeni" loading="lazy">
+            <div class="relic__body">
+              <span class="relic__no">04.4 — The Cave Ruins</span>
+              <h3>Phudzling</h3>
+              <p>An hour east above the Jhong river lie the ruins of an entire earlier settlement — <b>34 houses</b> on a terrace, part of Mustang's vast, half-explored cave civilisation.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SEASONS ================= -->
+    <section class="section seasons" id="seasons">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="index">05 — When to come</span>
+          <h2>A year at the <em>gate</em></h2>
+          <p>Kagbeni sits in the Himalayan rain shadow — so its calendar breaks the usual Nepal rules. Pick your season.</p>
+        </div>
+
+        <div class="season-tabs rv" role="tablist" aria-label="Seasons">
+          <button role="tab" aria-selected="true" id="tab-spring" aria-controls="panel-spring">Spring</button>
+          <button role="tab" aria-selected="false" id="tab-monsoon" aria-controls="panel-monsoon">Monsoon</button>
+          <button role="tab" aria-selected="false" id="tab-autumn" aria-controls="panel-autumn">Autumn</button>
+          <button role="tab" aria-selected="false" id="tab-winter" aria-controls="panel-winter">Winter</button>
+        </div>
+
+        <div class="season-panel is-on" id="panel-spring" role="tabpanel" aria-labelledby="tab-spring">
+          <div>
+            <h3>March — May <i>/ the classic</i></h3>
+            <span class="verdict">Prime season</span>
+            <p>Apple orchards blossom against bare cliffs, passes reopen, and the <b>Tiji festival</b> fills Lo Manthang with masked dances in May. Days are warm, mornings calm, trails busy but never crowded.</p>
+          </div>
+          <div class="meters">
+            <div class="meter"><label>Day temperature <b>10–20 °C</b></label><div class="bar"><i style="--v:70%"></i></div></div>
+            <div class="meter"><label>Afternoon wind <b>Strong</b></label><div class="bar"><i style="--v:75%"></i></div></div>
+            <div class="meter"><label>Clear skies <b>High</b></label><div class="bar"><i style="--v:80%"></i></div></div>
+          </div>
+        </div>
+
+        <div class="season-panel" id="panel-monsoon" role="tabpanel" aria-labelledby="tab-monsoon">
+          <div>
+            <h3>June — August <i>/ the secret</i></h3>
+            <span class="verdict">Rain-shadow bonus</span>
+            <p>While the rest of Nepal pours, Mustang stays largely dry — this is one of the few Himalayan treks that <b>works in monsoon</b>. Green barley fields, dramatic clouds, and the quietest trails of the year. Flights can be disrupted; roads get muddy patches.</p>
+          </div>
+          <div class="meters">
+            <div class="meter"><label>Day temperature <b>15–24 °C</b></label><div class="bar"><i style="--v:85%"></i></div></div>
+            <div class="meter"><label>Afternoon wind <b>Moderate</b></label><div class="bar"><i style="--v:55%"></i></div></div>
+            <div class="meter"><label>Clear skies <b>Mixed</b></label><div class="bar"><i style="--v:45%"></i></div></div>
+          </div>
+        </div>
+
+        <div class="season-panel" id="panel-autumn" role="tabpanel" aria-labelledby="tab-autumn">
+          <div>
+            <h3>September — November <i>/ the postcard</i></h3>
+            <span class="verdict">Prime season</span>
+            <p>Crystal air, harvest gold in the fields, and the sharpest mountain views of the year. The <b>Yartung horse festival</b> gallops through Muktinath in early autumn. Book lodges ahead in October.</p>
+          </div>
+          <div class="meters">
+            <div class="meter"><label>Day temperature <b>8–18 °C</b></label><div class="bar"><i style="--v:62%"></i></div></div>
+            <div class="meter"><label>Afternoon wind <b>Strong</b></label><div class="bar"><i style="--v:72%"></i></div></div>
+            <div class="meter"><label>Clear skies <b>Highest</b></label><div class="bar"><i style="--v:95%"></i></div></div>
+          </div>
+        </div>
+
+        <div class="season-panel" id="panel-winter" role="tabpanel" aria-labelledby="tab-winter">
+          <div>
+            <h3>December — February <i>/ the hush</i></h3>
+            <span class="verdict">For the hardy</span>
+            <p>Bitter nights, luminous days, empty trails. Many families migrate to lower towns and some lodges close, but the village under snow-dusted cliffs is unforgettable. Check road and flight conditions closely.</p>
+          </div>
+          <div class="meters">
+            <div class="meter"><label>Day temperature <b>-5–10 °C</b></label><div class="bar"><i style="--v:28%"></i></div></div>
+            <div class="meter"><label>Afternoon wind <b>Fierce &amp; cold</b></label><div class="bar"><i style="--v:88%"></i></div></div>
+            <div class="meter"><label>Clear skies <b>High</b></label><div class="bar"><i style="--v:78%"></i></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GUIDE ================= -->
+    <section class="section guide-band" id="guide">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="index">06 — Know before you go</span>
+          <h2>The <em>practical</em> part</h2>
+        </div>
+        <div class="guide-grid">
+          <div class="guide-note rv">
+            <div class="card">
+              <h3>Permit maths <i>· 2026</i></h3>
+              <p class="big">$50<i> / day</i></p>
+              <p>Upper Mustang's restricted-area permit switched in late 2025 from a flat US$500 / 10 days to a flexible per-day rate — a 5-day trip now costs $250 in permits, not $500.</p>
+            </div>
+            <div class="card">
+              <h3>Kagbeni itself <i>· free zone</i></h3>
+              <p>The village sits in <b>Lower Mustang</b> — no restricted permit needed. Come up from Jomsom with just the standard Annapurna paperwork and stay as long as you like.</p>
+            </div>
+          </div>
+
+          <div class="acc rv">
+            <div class="acc__item is-open">
+              <button class="acc__btn" aria-expanded="true">
+                <span class="no">06.1</span><span class="t">Permits &amp; rules</span><span class="x" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel"><div>
+                <p><span class="tag">ACAP</span><span class="tag">RAP — Upper Mustang</span><span class="tag">Licensed guide</span></p>
+                <ul>
+                  <li><b>To Kagbeni &amp; Muktinath:</b> Annapurna Conservation Area Permit (ACAP) only — no restricted permit.</li>
+                  <li><b>North of Kagbeni (Upper Mustang):</b> Restricted Area Permit at <b>US$50 per person per day</b> (the old $500/10-day flat fee was abolished in late 2025), issued through a registered trekking agency.</li>
+                  <li><b>Guides:</b> a licensed guide remains mandatory in the restricted zone — but since <b>March 2026</b> solo travelers with a guide are welcome; the old two-person minimum is gone.</li>
+                  <li>Carry your passport: the ACAP checkpoint sits right at Kagbeni's northern gate.</li>
+                </ul>
+              </div></div>
+            </div>
+
+            <div class="acc__item">
+              <button class="acc__btn" aria-expanded="false">
+                <span class="no">06.2</span><span class="t">Getting there</span><span class="x" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel"><div>
+                <ul>
+                  <li><b>By air:</b> Kathmandu → Pokhara, then a spectacular 20-minute morning flight to Jomsom. From Jomsom it's a 10 km riverside walk (~3 h) or a short jeep ride to Kagbeni.</li>
+                  <li><b>By road:</b> drive Pokhara → Jomsom (a long, scenic day on mountain roads), then continue to Kagbeni by jeep or on foot.</li>
+                  <li><b>On foot:</b> Annapurna Circuit trekkers drop in from Muktinath (3–4 h downhill) — the classic arrival.</li>
+                </ul>
+              </div></div>
+            </div>
+
+            <div class="acc__item">
+              <button class="acc__btn" aria-expanded="false">
+                <span class="no">06.3</span><span class="t">Sleeping &amp; eating</span><span class="x" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel"><div>
+                <p>Family-run lodges cluster inside the old town and along the river — warm dining rooms, apple pie, and Marpha-apple everything. Try local <b>buckwheat bread, thukpa and dried-apple snacks</b>; and yes, the famous yak-themed diner <b>"YacDonald's"</b> is real, beloved, and photographed daily.</p>
+              </div></div>
+            </div>
+
+            <div class="acc__item">
+              <button class="acc__btn" aria-expanded="false">
+                <span class="no">06.4</span><span class="t">Reading the wind</span><span class="x" aria-hidden="true"></span>
+              </button>
+              <div class="acc__panel"><div>
+                <ul>
+                  <li>Walk and fly <b>before noon</b> — the valley wind rises like clockwork after ~11 am.</li>
+                  <li>Sunglasses and a buff are not optional: the afternoon gorge is a sandblaster.</li>
+                  <li>Altitude is gentle here (2,804 m), but going north you'll sleep higher each night — pace yourself.</li>
+                  <li>Cash only in the village; the nearest reliable ATMs are in Jomsom.</li>
+                </ul>
+              </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= GALLERY ================= -->
+    <section class="section" id="gallery">
+      <div class="wrap">
+        <div class="sec-head rv">
+          <span class="index">07 — Gallery</span>
+          <h2>Field notes in <em>light</em></h2>
+        </div>
+        <div class="gal rv">
+          <a href="images/kagbeni-pano-big.jpg" data-shot data-label="The village &amp; the valley"><img src="images/kagbeni-pano-big.jpg" alt="Panorama of Kagbeni village, its monastery and fields before the Kali Gandaki valley" loading="lazy"></a>
+          <a href="images/kagbeni-village-1.jpg" data-shot data-label="Under Nilgiri"><img src="images/kagbeni-village-1.jpg" alt="Village houses with prayer flags beneath the snowy Nilgiri massif" loading="lazy"></a>
+          <a href="images/prayer-flags.jpg" data-shot data-label="The noon wind"><img src="images/prayer-flags.jpg" alt="A prayer flag straining in the wind above the braided river" loading="lazy"></a>
+          <a href="images/kagbeni-wide-3.jpg" data-shot data-label="Spring in the valley"><img src="images/kagbeni-wide-3.jpg" alt="Green spring trees along the road with Nilgiri shining beyond" loading="lazy"></a>
+          <a href="images/kagbeni-chorten.jpg" data-shot data-label="The chörten"><img src="images/kagbeni-chorten.jpg" alt="A traditional chorten in Kagbeni" loading="lazy"></a>
+          <a href="images/kagbeni-fields.jpg" data-shot data-label="Barley terraces"><img src="images/kagbeni-fields.jpg" alt="Green cultivated fields of Kagbeni" loading="lazy"></a>
+          <a href="images/kagbeni-wide-6.jpg" data-shot data-label="The road to Muktinath"><img src="images/kagbeni-wide-6.jpg" alt="A mountain road curving toward snow peaks near Muktinath" loading="lazy"></a>
+          <a href="images/kagbeni-women.jpg" data-shot data-label="Wool &amp; wind"><img src="images/kagbeni-women.jpg" alt="Women of Kagbeni spinning wool together beside a stone wall" loading="lazy"></a>
+          <a href="images/kagbeni-houses-1.jpg" data-shot data-label="The prayer-wheel lane"><img src="images/kagbeni-houses-1.jpg" alt="A lane of prayer wheels and prayer flags leading through old Kagbeni, a monk in the distance" loading="lazy"></a>
+          <a href="images/muktinath.jpg" data-shot data-label="Muktinath"><img src="images/muktinath.jpg" alt="Muktinath temple and its sacred pools" loading="lazy"></a>
+          <a href="images/kagbeni-courtyard.jpg" data-shot data-label="A courtyard"><img src="images/kagbeni-courtyard.jpg" alt="A courtyard in the old village of Kagbeni" loading="lazy"></a>
+          <a href="images/lo-manthang.jpg" data-shot data-label="Lo Manthang"><img src="images/lo-manthang.jpg" alt="The red walls of Lo Manthang monastery at dusk" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= OUTRO ================= -->
+    <section class="outro">
+      <div class="outro__bg" style="background-image:url('images/kagbeni-wide-6.jpg')" role="img" aria-label="The road north from Kagbeni curving toward snow-covered Himalayan peaks"></div>
+      <div class="wrap rv">
+        <p class="outro__kicker">The gate is open</p>
+        <h2>The road north starts here</h2>
+        <p>Morning light, a stamped permit, prayer flags snapping overhead — and six hundred years of travelers who stood exactly where you're standing.</p>
+        <a class="btn-solid" href="#guide">Plan your journey
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-foot">
+    <div class="wrap">
+      <div>
+        <div class="foot-brand">KAGBENI</div>
+        <p>The windswept gateway of Upper Mustang, Nepal — history, culture and honest travel notes from the last village before the Forbidden Kingdom.</p>
+        <p class="foot-coords">28.8360° N · 83.7893° E · 2,804 M</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#village">The village</a></li>
+          <li><a href="#journey">The journey north</a></li>
+          <li><a href="#sacred">Sacred Kagbeni</a></li>
+          <li><a href="#seasons">Seasons</a></li>
+          <li><a href="#guide">Travel guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Notes</h4>
+        <ul>
+          <li><a href="#gallery">Photo gallery</a></li>
+          <li><a href="credits.html">Image credits &amp; licenses</a></li>
+          <li><a href="https://ntb.gov.np" target="_blank" rel="noopener">Nepal Tourism Board ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap foot-legal">
+      <span>© <span data-year>2026</span> kagbenimustang.com · All rights reserved.</span>
+      <span>Site by ShanKyTech</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
